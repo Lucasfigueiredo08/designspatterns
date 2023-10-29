@@ -6,7 +6,7 @@ import com.examples.designpatterns.designsdecriacao.factorymethod.impl.Moto;
 
 public class Main {
 
-    /**
+    /** Factory method
      *  Define uma interface para criar um objeto, mas deixa a escolha da sua classe de implementação para as subclasses
      * @param args
      */
