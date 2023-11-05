@@ -7,6 +7,10 @@ import com.examples.designpatterns.designsdecriacao.abstractmethod.repository.Ab
 import com.examples.designpatterns.designsdecriacao.abstractmethod.repository.GUIFactory;
 
 public class Main {
+    /**
+     *  Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+     * @param args
+     */
 
     public static void main(String[] args) {
         GUIFactory windowsFactory = new WindowsFactory();
