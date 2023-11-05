@@ -45,6 +45,6 @@ public class ItemPedido {
         return "Item: " +
                 produto + ", Preço Unitário: $" +
                 preco + ", Quantidade: " +
-                quantidade + ", Total: $" + getTotal();
+                quantidade + ", Total: $ " + getTotal();
     }
 }
