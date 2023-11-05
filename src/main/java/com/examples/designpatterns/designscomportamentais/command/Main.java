@@ -1,5 +1,7 @@
 package com.examples.designpatterns.designscomportamentais.command;
 
+import com.examples.designpatterns.designscomportamentais.command.comandos.DesligarDispositivo;
+import com.examples.designpatterns.designscomportamentais.command.comandos.DiminuirVolume;
 import com.examples.designpatterns.designscomportamentais.command.controlador.ControleRemoto;
 import com.examples.designpatterns.designscomportamentais.command.comandos.AumentarVolume;
 import com.examples.designpatterns.designscomportamentais.command.comandos.LigarDispositivo;
@@ -31,6 +33,8 @@ public class Main {
 
         controle.desfazerUltimoComando();
         controle.desfazerUltimoComando();
+        controle.desfazerComando(new DiminuirVolume(dispositivo), dispositivo);
+        controle.desfazerComando(new DesligarDispositivo(dispositivo), dispositivo);
 
     }
 }
